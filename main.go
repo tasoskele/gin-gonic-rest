@@ -1,15 +1,20 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/tasoskele/gin-gonic-rest/api/controllers"
+	"github.com/tasoskele/gin-gonic-rest/api/utils"
+)
+
+func init() {
+	utils.LoadEnv()
+	utils.ConnectDB()
+}
 
 func main() {
 	server := gin.Default()
 
-	server.GET("/test", func(ctx *gin.Context) {
-		ctx.JSON(200, gin.H{
-			"message": "Test complete with daemon x2",
-		})
-	})
+	server.POST("/posts", controllers.CreatePost)
 
-	server.Run(":8081")
+	server.Run()
 }
