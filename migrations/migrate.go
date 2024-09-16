@@ -11,5 +11,5 @@ func init() {
 }
 
 func main() {
-	utils.DB.AutoMigrate(&models.Post{})
+	utils.DB.AutoMigrate(&models.Product{})
 }

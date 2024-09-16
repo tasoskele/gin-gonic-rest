@@ -2,7 +2,7 @@ package models
 
 import "gorm.io/gorm"
 
-type Post struct {
+type Product struct {
 	gorm.Model
 	ID    uint
 	Title string

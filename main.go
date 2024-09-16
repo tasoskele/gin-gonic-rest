@@ -14,7 +14,7 @@ func init() {
 func main() {
 	server := gin.Default()
 
-	server.POST("/posts", controllers.CreatePost)
+	server.POST("/products", controllers.CreateProduct)
 
 	server.Run()
 }
