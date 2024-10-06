@@ -5,10 +5,16 @@
 
 - It is built with the Go-Gin framework and uses the RESTful API architecture.
 
-- ...
+- The application is dockerized using Docker Compose for easy deployment.
 
 ## Setup instructions
-- **Docker** .....
+**Requirements**
+- Docker
+- Docker Compose
+
+**Installation**
+1. Clone the repository and change directory into it
+2. run: ```docker-compose up --build```
 
 ## Model Structure
 
@@ -16,14 +22,12 @@
 | Field       | Type         | Key     | Description |
 |-------------|--------------|---------|-------------|
 | id          | int          | Primary | Unique identifier for each product     |
+| title       | string       |         | The title of the product               |
+| body        | string       |         | The description of the product         |
 | price       | float64      |         | The price of the product               |
-| remaining   | int          |         | The remaining quantity of the product  |
-| height      | float64      |         | The height of the product              |
-| weight      | float64      |         | The weight of the product              |
-| some_field  | -------      |         | -------------------------              |
 | created     | datetime     |         | Created timestamp                      |
 | updated     | datetime     |         | Updated timestamp                      |
-| deleted     | datetime     |         | Deleted timestamp(?)                   |
+| deleted     | datetime     |         | Deleted timestamp                      |
 
 ## API endpoints
 - products

@@ -10,6 +10,6 @@ func init() {
 	utils.ConnectDB()
 }
 
-func main() {
+func RunMigrations() {
 	utils.DB.AutoMigrate(&models.Product{})
 }
