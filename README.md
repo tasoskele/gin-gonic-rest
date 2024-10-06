@@ -7,7 +7,8 @@
 
 - The application is dockerized using Docker Compose for easy deployment.
 
-- It uses pagination with params like so:
+- It uses pagination with params like so
+
 | Key   | Value |
 |-------|-------|
 | page  |  2    |
