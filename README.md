@@ -9,6 +9,7 @@
 
 - It uses pagination with params like so:
 | Key   | Value |
+|-------|-------|
 | page  |  2    |
 | limit |  5    |
 
